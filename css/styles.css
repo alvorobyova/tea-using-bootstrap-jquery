@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Light.ttf");
+    font-weight: 100;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.slider {
+    max-width: 1318px;
+}
+
+.slide {
+    height: 640px;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-content {
+    top: 210px;
+    left: 50px;
+}
+
+/*Селекторы, которых нет в HTML-документе*/
+
+.slick-prev {
+    left: 15px;
+    text-align: center;
+}
+
+.slick-next {
+    right: 16px;
+}
+.slick-next:before {
+    content: url("../img/next.png") ;
+}
+
+.slick-prev:before {
+    content: url("../img/previous.png") ;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 30px;
+}
+
+.slick-prev, .slick-next {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.93);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+ .slick-prev:hover, .slick-next:hover {
+    background: rgba(255, 255, 255, 0.64);
+}
+
+
+ul.slick-dots {
+    display: none !important;
+}
+.accordion {
+    --bs-accordion-border-color: transparent;
+}
+
+.accordion-button::after {
+    transform: rotate(0deg);
+    background-image: url("../img/arrow.png");
+}
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg);
+    background-image: url("../img/arrow.png");
+}
