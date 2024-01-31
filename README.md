@@ -1,4 +1,4 @@
-## Website for ordering tea ☕️
+## Website for tea ordering ☕️
 
 ✔️ on the main screen there is a slider with banners, implemented using the slick plugin<br>
 ✔️ hover effects added via hover.css<br>
